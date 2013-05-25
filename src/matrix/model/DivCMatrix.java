@@ -7,8 +7,8 @@ package matrix.model;
  * Divided and Conquer methods
  */
 public class DivCMatrix extends Matrix {
-    static private int fill_line_holder = 0;
-    static private int fill_row_holder = 0;
+    static private int line_holder = 0;
+    static private int row_holder = 0;
     private DivCMatrix lt_;
     private DivCMatrix lb_;
     private DivCMatrix rt_;
@@ -86,21 +86,21 @@ public class DivCMatrix extends Matrix {
                 lt_.setMtx(i, j, getMtx(i, j));
 
                 if ((divLines * 2 > getLines()) && (i == divLines - 1)) {
-                    lb_.setMtx(i, j, fill_line_holder);
+                    lb_.setMtx(i, j, line_holder);
                 } else {
                     lb_.setMtx(i, j, getMtx(divLines + i, j));
                 }
 
                 if ((divRows * 2 > getRows()) && (j == divRows - 1)) {
-                    rt_.setMtx(i, j, fill_row_holder);
+                    rt_.setMtx(i, j, row_holder);
                 } else {
                     rt_.setMtx(i, j, getMtx(i, divRows + j));
                 }
 
                 if ((divLines * 2 > getLines()) && (i == divLines - 1)) {
-                    rb_.setMtx(i, j, fill_line_holder);
+                    rb_.setMtx(i, j, line_holder);
                 } else if ((divRows * 2 > getRows()) && (j == divRows - 1)) {
-                    rb_.setMtx(i, j, fill_row_holder);
+                    rb_.setMtx(i, j, row_holder);
                 } else {
                     rb_.setMtx(i, j, getMtx(divLines + i, divRows + j));
                 }
