@@ -1,7 +1,7 @@
 package matrix.model;
 
 /**
-  * User: Ding
+ * User: Ding
  * Date: 4/29/13
  * Time: 5:20 PM
  * standard matrix mult

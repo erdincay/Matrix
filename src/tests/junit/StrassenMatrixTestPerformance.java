@@ -8,7 +8,7 @@ import org.junit.Test;
  * Date: 5/12/13
  * Time: 5:02 PM
  */
-public class StrassenMatrixTestPerformance extends TestPerformance{
+public class StrassenMatrixTestPerformance extends TestPerformance {
     @Test
     public void testProd() throws Exception {
         for (int i = 1; i <= exp; i++) {

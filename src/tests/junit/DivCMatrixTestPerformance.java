@@ -4,11 +4,11 @@ import matrix.model.DivCMatrix;
 import org.junit.Test;
 
 /**
-  * User: Ding
+ * User: Ding
  * Date: 5/12/13
  * Time: 1:01 AM
  */
-public class DivCMatrixTestPerformance extends TestPerformance{
+public class DivCMatrixTestPerformance extends TestPerformance {
     @Test
     public void testProd() throws Exception {
         for (int i = 1; i <= exp; i++) {
